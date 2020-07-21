@@ -8,7 +8,7 @@ namespace Towers_cSharp
         private int capacity;
         private string type;
         private double nightlyRate;
-        private List<Guest> guests;
+        // private List<Guest> guests;
 
 
         public Bedroom(int roomNumber, int capacity, string type, double nightlyRate)

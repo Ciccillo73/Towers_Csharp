@@ -4,23 +4,31 @@ namespace Towers_cSharp
 {
     public class Test
     {
-        private  Bedroom _sut;
+        private  Bedroom _bedroom;
 
         [SetUp]
         public void Setup()
         {
-            _sut = new Bedroom("Pink");
+            _bedroom = new Bedroom(32, 5, "Double", 25.00);
         }
         
 
        [Test]
-       public void Test1()
+       [Ignore("Learning purposes")]
+       public void Return_RoomNumber()
        {
-            Assert.That("Pink", Is.EqualTo(_sut.Name));
+           var result = _bedroom.RoomNumber;
+            Assert.That(result, Is.EqualTo(32));
+       }
+
+       [Test]
+       public void Return_RoomCapacity()
+       {
+           var result = _bedroom.Capacity;
+           Assert.That(result, Is.EqualTo(5));
        }
         
-        [Test]
-        public 
+         
              
     }
 }
