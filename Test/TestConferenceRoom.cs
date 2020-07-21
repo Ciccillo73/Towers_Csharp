@@ -42,5 +42,14 @@ namespace Towers_cSharp
             _conferenceRoom.checkinGuest(_guest2);
             Assert.That(_conferenceRoom.guestListSize(), Is.EqualTo(2));
         }
+
+        [Test]
+        public void AddGuest_ClearGuest_ReturnNumberOfGuests()
+        {
+            _conferenceRoom.checkinGuest(_guest1);
+            _conferenceRoom.checkinGuest(_guest2);
+            _conferenceRoom.checkOutGuests();
+            Assert.That(_conferenceRoom.guestListSize(), Is.EqualTo(0));
+        }
     }
 }

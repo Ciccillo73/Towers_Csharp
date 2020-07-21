@@ -42,5 +42,13 @@ namespace Towers_cSharp
                 _guests.Add(guest);
             }
         }
+
+        public void checkOutGuests()
+        {
+            if(guestListSize() > 0)
+            {
+                _guests.Clear();
+            }
+        }
     }
 }
