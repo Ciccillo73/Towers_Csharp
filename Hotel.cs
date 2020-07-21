@@ -14,10 +14,22 @@ namespace Towers_cSharp
             _conferenceRooms = new List<ConferenceRoom>();
             _diningRooms = new Dictionary<string, DiningRoom>();
         }
-        
-        
 
-        
+        public void addBedroom(Bedroom bedroom)
+        {
+            _bedrooms.Add(bedroom);
+        }
+
+
+        public void addConferenceRoom(ConferenceRoom conferenceRoom)
+        {
+            _conferenceRooms.Add((conferenceRoom));
+        }
+
+        public void addDiningRoom(DiningRoom diningRoom)
+        {
+            _diningRooms.Add(diningRoom);
+        }
     }
     
     
