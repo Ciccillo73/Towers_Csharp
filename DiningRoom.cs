@@ -10,6 +10,7 @@ namespace Towers_cSharp
         public DiningRoom(string name)
         {
             _name = name;
+            _guests = new List<Guest>();
         }
 
         public string Name
@@ -18,9 +19,9 @@ namespace Towers_cSharp
             set => _name = value;
         }
 
-        public void guestListSize()
+        public int guestListSize()
         {
-            _guests.Count;
+            return _guests.Count;
         }
         
     }
