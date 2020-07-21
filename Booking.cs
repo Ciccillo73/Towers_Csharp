@@ -22,6 +22,8 @@ namespace Towers_cSharp
             get => _bedroom;
             set => _bedroom = value;
         }
+        
+        
     }
     
 }

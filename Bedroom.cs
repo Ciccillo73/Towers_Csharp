@@ -68,6 +68,8 @@ namespace Towers_cSharp
         {
             return countGuestList() == 0;
         }
+        
+        
     }
     
 }
