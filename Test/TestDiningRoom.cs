@@ -16,7 +16,17 @@ namespace Towers_cSharp
             _guest1 = new Guest("Phil");
             _guest2 = new Guest("MArk");
         }
-        
-        
+
+        [Test]
+        public void Return_Name()
+        {
+            Assert.That(_diningRoom.Name, Is.EqualTo("Heaven"));
+        }
+
+        [Test]
+        public void ReturnGuestListStartsAtZero()
+        {
+            Assert.That(_diningRoom.guestListSize(), Is.EqualTo(0));
+        } 
     }
 }
