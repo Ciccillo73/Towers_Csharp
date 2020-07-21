@@ -34,5 +34,13 @@ namespace Towers_cSharp
         {
             return _guests.Count;
         }
+
+        public void checkinGuest(Guest guest)
+        {
+            if (guestListSize() < Capacity)
+            {
+                _guests.Add(guest);
+            }
+        }
     }
 }
