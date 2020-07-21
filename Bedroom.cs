@@ -8,7 +8,7 @@ namespace Towers_cSharp
         private int capacity;
         private string type;
         private double nightlyRate;
-        // private List<Guest> guests;
+        private List<Guest> guests;
 
 
         public Bedroom(int roomNumber, int capacity, string type, double nightlyRate)
@@ -17,6 +17,8 @@ namespace Towers_cSharp
             this.capacity = capacity;
             this.type = type;
             this.nightlyRate = nightlyRate;
+            this.guests = new List<Guest>();
+            
         }
 
         public int RoomNumber
@@ -41,6 +43,11 @@ namespace Towers_cSharp
         {
             get => nightlyRate;
             set => nightlyRate = value;
+        }
+
+        public int countGuestList()
+        {
+            return guests.Count;
         }
     }
     

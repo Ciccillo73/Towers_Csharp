@@ -41,7 +41,13 @@ namespace Towers_cSharp
            var result = _bedroom.NightlyRate;
            Assert.That(result, Is.EqualTo(25.00));
        }
-         
+
+       [Test]
+       public void Return_GuestListSize_MustBeEmpty()
+       {
+           var result = _bedroom.countGuestList();
+           Assert.That(result, Is.EqualTo(0));
+       }
              
     }
 }
