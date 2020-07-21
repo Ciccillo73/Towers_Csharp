@@ -1,7 +1,24 @@
+using System.Collections.Generic;
+
 namespace Towers_cSharp
 {
     public class Hotel
     {
+        private List<Bedroom> _bedrooms;
+        private List<ConferenceRoom> _conferenceRooms;
+        private Dictionary<string, DiningRoom> _diningRooms;
+
+        public Hotel()
+        {
+            _bedrooms = new List<Bedroom>();
+            _conferenceRooms = new List<ConferenceRoom>();
+            _diningRooms = new Dictionary<string, DiningRoom>();
+        }
+        
+        
+
         
     }
+    
+    
 }
