@@ -66,5 +66,8 @@ namespace Towers_cSharp
            var result = _bedroom.countGuestList();
            Assert.That(result, Is.EqualTo(0));
        }
+
+       
+       
     }
 }

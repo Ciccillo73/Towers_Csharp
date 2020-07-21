@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace Towers_cSharp
@@ -57,7 +58,15 @@ namespace Towers_cSharp
 
         public void checkOutGuests()
         {
-            guests.Clear();
+            if (!this.IsVacant())
+            {
+                guests.Clear();
+            }
+        }
+
+        public bool IsVacant()
+        {
+            return countGuestList() == 0;
         }
     }
     
