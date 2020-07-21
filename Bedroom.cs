@@ -5,62 +5,62 @@ namespace Towers_cSharp
 {
     public class Bedroom
     {
-        private int roomNumber;
-        private int capacity;
-        private string type;
-        private double nightlyRate;
-        private List<Guest> guests;
+        private int _roomNumber;
+        private int _capacity;
+        private string _type;
+        private double _nightlyRate;
+        private List<Guest> _guests;
 
 
         public Bedroom(int roomNumber, int capacity, string type, double nightlyRate)
         {
-            this.roomNumber = roomNumber;
-            this.capacity = capacity;
-            this.type = type;
-            this.nightlyRate = nightlyRate;
-            this.guests = new List<Guest>();
+            _roomNumber = roomNumber;
+            _capacity = capacity;
+            _type = type;
+            _nightlyRate = nightlyRate;
+            _guests = new List<Guest>();
             
         }
 
         public int RoomNumber
         {
-            get => roomNumber;
-            set => roomNumber = value;
+            get => _roomNumber;
+            set => _roomNumber = value;
         }
 
         public int Capacity
         {
-            get => capacity;
-            set => capacity = value;
+            get => _capacity;
+            set => _capacity = value;
         }
 
         public string Type
         {
-            get => type;
-            set => type = value;
+            get => _type;
+            set => _type = value;
         }
 
         public double NightlyRate
         {
-            get => nightlyRate;
-            set => nightlyRate = value;
+            get => _nightlyRate;
+            set => _nightlyRate = value;
         }
 
         public int countGuestList()
         {
-            return guests.Count;
+            return _guests.Count;
         }
 
         public void checkInGuests(Guest guest)
         {
-            guests.Add(guest);
+            _guests.Add(guest);
         }
 
         public void checkOutGuests()
         {
             if (!this.IsVacant())
             {
-                guests.Clear();
+                _guests.Clear();
             }
         }
 
@@ -68,7 +68,8 @@ namespace Towers_cSharp
         {
             return countGuestList() == 0;
         }
-        
+
+
         
     }
     

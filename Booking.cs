@@ -1,3 +1,5 @@
+using System;
+
 namespace Towers_cSharp
 {
     public class Booking
@@ -23,7 +25,11 @@ namespace Towers_cSharp
             set => _bedroom = value;
         }
         
-        
+        public double totalBill()
+        {
+            return NumberOfNights * Bedroom.NightlyRate;
+            
+        }
     }
     
 }

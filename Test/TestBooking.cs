@@ -25,8 +25,8 @@ namespace Towers_cSharp
         [Test]
         public void Return_Double_Bill()
         {
-            result = _bedroom.totalBill();
-            Assert.Equal(result, Is.EqualTo(50));
+            var result = _booking.totalBill();
+            Assert.That(result, Is.EqualTo(50));
         }
             
         
