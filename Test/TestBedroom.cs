@@ -34,7 +34,13 @@ namespace Towers_cSharp
            var result = _bedroom.Type;
            Assert.That(result, Is.EqualTo("Double"));
        }
-        
+
+       [Test]
+       public void Return_NightlyRate()
+       {
+           var result = _bedroom.NightlyRate;
+           Assert.That(result, Is.EqualTo(25.00));
+       }
          
              
     }
