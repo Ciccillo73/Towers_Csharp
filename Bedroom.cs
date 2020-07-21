@@ -18,6 +18,30 @@ namespace Towers_cSharp
             this.type = type;
             this.nightlyRate = nightlyRate;
         }
+
+        public int RoomNumber
+        {
+            get => roomNumber;
+            set => roomNumber = value;
+        }
+
+        public int Capacity
+        {
+            get => capacity;
+            set => capacity = value;
+        }
+
+        public string Type
+        {
+            get => type;
+            set => type = value;
+        }
+
+        public double NightlyRate
+        {
+            get => nightlyRate;
+            set => nightlyRate = value;
+        }
     }
     
 }
