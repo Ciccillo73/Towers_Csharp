@@ -49,6 +49,11 @@ namespace Towers_cSharp
         {
             return guests.Count;
         }
+
+        public void checkInGuests(Guest guest)
+        {
+            guests.Add(guest);
+        }
     }
     
 }

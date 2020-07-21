@@ -58,6 +58,13 @@ namespace Towers_cSharp
            var result = _bedroom.countGuestList();
            Assert.That(result, Is.EqualTo(1));
        }
-             
+
+       [Test]
+       public void Add_WhenCalled_ReturnClearList()
+       {
+           _bedroom.checkOutGuests();
+           var result = _bedroom.countGuestList();
+           Assert.That(result, Is.EqualTo(0));
+       }
     }
 }
