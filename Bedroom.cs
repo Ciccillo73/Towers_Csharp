@@ -54,6 +54,11 @@ namespace Towers_cSharp
         {
             guests.Add(guest);
         }
+
+        public void checkOutGuests()
+        {
+            guests.Clear();
+        }
     }
     
 }
