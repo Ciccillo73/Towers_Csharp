@@ -4,12 +4,14 @@ namespace Towers_cSharp
 {
     public class Test
     {
-        private  Bedroom _bedroom;
+        private Bedroom _bedroom;
+        private Guest _guest1;  
 
         [SetUp]
         public void Setup()
         {
             _bedroom = new Bedroom(32, 5, "Double", 25.00);
+            _guest1 = new Guest("John");   
         }
         
 
@@ -47,6 +49,14 @@ namespace Towers_cSharp
        {
            var result = _bedroom.countGuestList();
            Assert.That(result, Is.EqualTo(0));
+       }
+
+       [Test]
+       public void Add_WhenCalled_ReturnTheListSize()
+       {
+           _bedroom.checkInGuests(_guest1);
+           var result = _bedroom.countGuestList();
+           Assert.That(result, Is.EqualTo(1));
        }
              
     }
