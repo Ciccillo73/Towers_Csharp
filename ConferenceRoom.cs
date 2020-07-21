@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using NUnit.Framework.Constraints;
 
 namespace Towers_cSharp
 {
@@ -26,6 +27,12 @@ namespace Towers_cSharp
         {
             get => _name;
             set => _name = value;
+        }
+
+
+        public int guestListSize()
+        {
+            return _guests.Count;
         }
     }
 }

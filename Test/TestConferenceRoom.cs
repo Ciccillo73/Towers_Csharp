@@ -28,5 +28,11 @@ namespace Towers_cSharp
         {
             Assert.That(_conferenceRoom.Name,Is.EqualTo("Eagle"));
         }
+
+        [Test]
+        public void Return_Int_GuestListSize()
+        {
+            Assert.That(_conferenceRoom.guestListSize(), Is.EqualTo(0));
+        }
     }
 }
