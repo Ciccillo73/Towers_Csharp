@@ -21,7 +21,13 @@ namespace Towers_cSharp
             var result = _booking.NumberOfNights;
             Assert.That(result, Is.EqualTo(2));
         }
-        
+
+        [Test]
+        public void Return_Double_Bill()
+        {
+            result = _bedroom.totalBill();
+            Assert.Equal(result, Is.EqualTo(50));
+        }
             
         
     }
