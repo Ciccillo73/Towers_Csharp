@@ -29,5 +29,6 @@
     &lt;TestId&gt;NUnit3x::73060871-69DE-4A20-AAAB-403D266DAA68::.NETCoreApp,Version=v3.1::Towers_cSharp.TestConferenceRoom.CheckInGuestOverCapacity_ReturnMaxCapacity&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::73060871-69DE-4A20-AAAB-403D266DAA68::.NETCoreApp,Version=v3.1::Towers_cSharp.TestDiningRoom.Return_Name&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::73060871-69DE-4A20-AAAB-403D266DAA68::.NETCoreApp,Version=v3.1::Towers_cSharp.TestDiningRoom.ReturnGuestListStartsAtZero&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::73060871-69DE-4A20-AAAB-403D266DAA68::.NETCoreApp,Version=v3.1::Towers_cSharp.TestDiningRoom.Add_Guests_CheckIn_Return_GuestListSize&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
