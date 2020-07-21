@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Towers_cSharp
 {
     public class Bedroom
@@ -5,18 +7,16 @@ namespace Towers_cSharp
         private int roomNumber;
         private int capacity;
         private string type;
-        private
-        
+        private double nightlyRate;
+        private List<Guest> guests;
 
-        public Bedroom(string name)
-        {
-            this.name = name;
-        }
 
-        public string Name
+        public Bedroom(int roomNumber, int capacity, string type, double nightlyRate)
         {
-            get => name;
-            set => name = value;
+            this.roomNumber = roomNumber;
+            this.capacity = capacity;
+            this.type = type;
+            this.nightlyRate = nightlyRate;
         }
     }
     
