@@ -20,6 +20,7 @@ namespace Towers_cSharp
             _bedrooms.Add(bedroom);
         }
 
+        
 
         public void addConferenceRoom(ConferenceRoom conferenceRoom)
         {
@@ -28,8 +29,29 @@ namespace Towers_cSharp
 
         public void addDiningRoom(DiningRoom diningRoom)
         {
-            _diningRooms.Add(diningRoom);
+            _diningRooms.Add(diningRoom.Name, diningRoom);
         }
+
+        public Bedroom findBedRoom(int roomNumber)
+        {
+            Bedroom foundRoom = null;
+            {
+                foreach(Bedroom bedroom in _bedrooms)
+                {
+                    if (bedroom.RoomNumber == roomNumber)
+                    {
+                        foundRoom = bedroom;
+                    }
+                }
+
+                return foundRoom;
+            }
+        }
+
+        // public Bedroom findRoom(int i)
+        // {
+        //     throw new System.NotImplementedException();
+        // }
     }
     
     
