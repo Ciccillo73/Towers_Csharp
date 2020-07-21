@@ -17,8 +17,11 @@ namespace Towers_cSharp
             get => _name;
             set => _name = value;
         }
-        
-        
+
+        public void guestListSize()
+        {
+            _guests.Count;
+        }
         
     }
     
