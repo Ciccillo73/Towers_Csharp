@@ -27,6 +27,14 @@ namespace Towers_cSharp
         public void ReturnGuestListStartsAtZero()
         {
             Assert.That(_diningRoom.guestListSize(), Is.EqualTo(0));
-        } 
+        }
+
+        [Test]
+        public void Add_Guests_CheckIn_Return_GuestListSize()
+        {
+            _diningRoom.checkInGuests(_guest1);
+            Assert.That(_diningRoom.guestListSize(), Is.EqualTo(1));
+        }
+        
     }
 }
