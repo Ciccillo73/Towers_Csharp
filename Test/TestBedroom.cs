@@ -27,6 +27,13 @@ namespace Towers_cSharp
            var result = _bedroom.Capacity;
            Assert.That(result, Is.EqualTo(5));
        }
+
+       [Test]
+       public void Return_RoomType()
+       {
+           var result = _bedroom.Type;
+           Assert.That(result, Is.EqualTo("Double"));
+       }
         
          
              
