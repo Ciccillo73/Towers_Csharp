@@ -48,10 +48,21 @@ namespace Towers_cSharp
             }
         }
 
-        // public Bedroom findRoom(int i)
-        // {
-        //     throw new System.NotImplementedException();
-        // }
+       
+        public ConferenceRoom findConferenceRoom(string name)
+        {
+            ConferenceRoom foundRoom = null;
+            foreach (ConferenceRoom conferenceRoom in _conferenceRooms)
+            {
+                if (conferenceRoom.Name == name)
+                {
+                    foundRoom = conferenceRoom;
+                }
+            }
+            
+            return foundRoom;
+        }
+        
     }
     
     

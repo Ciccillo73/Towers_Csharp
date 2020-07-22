@@ -37,6 +37,13 @@ namespace Towers_cSharp
             Bedroom foundRoom = _hotel.findBedRoom(1);
             Assert.That(foundRoom, Is.EqualTo(_singleroom));
         }
+
+        [Test]
+        public void FindConferenceRoom_Return_ConferenceRoom()
+        {
+            ConferenceRoom foundRoom = _hotel.findConferenceRoom("BigMess");
+            Assert.That(foundRoom, Is.EqualTo(_conferenceRoom));
+        }
         
     }
 }
